@@ -1,0 +1,47 @@
+<html>
+<head>
+</head>
+<style>
+
+div{
+text-align:  center;
+}
+input{
+padding: 12px 24px}
+p{text-align:center;
+background: yellow;}
+button:hover{box-shadow: 2px 10px 2px 2p darkgrey;outline:none;}
+button{
+color: white;
+box-size:border-box;
+
+border-radius: 8px;background-color:  green;
+padding: 12px 34px;}
+</style>
+
+<body>
+<div>
+<h1> TODO LIST</h1>
+<input type="text" name="item" id="demo1" Placeholder="EnterName">
+<button type="button" onClick="additem()">ADD ITEM</button>
+
+</div>
+</body>
+<script type="text/javascript">
+
+ function additem(){
+
+let x= document.getElementById("demo1").value;
+
+var  p= document.createElement("P");   // Create a <button> element
+p.innerHTML = x;     
+              // Insert text
+document.body.appendChild(p); 
+
+document.getElementById("demo1").value="";
+
+}
+
+
+</script>
+</html>
